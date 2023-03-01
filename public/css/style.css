@@ -1,0 +1,246 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Raleway:wght@700&display=swap');
+
+/* SCROLL BAR */
+ #element::-webkit-scrollbar {
+    display: none;
+    }
+
+ ::-webkit-scrollbar {
+    display: none;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 3000px;
+  }
+
+  /* Mengatur background saat di-scroll
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffff;
+    border-radius: 10px;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff;
+  } */
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: #FFAF10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+
+.navbar .navbar-nav a {
+    color: #ffff;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin: 0 2rem;
+    font-family: 'Nunito Sans';
+    justify-content: center;
+    margin-left: 1;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #efeaea;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding: 0.2rem;
+    border-bottom: 0.1rem solid #ffffff;
+    transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .navbar-extra a {
+    color: #ffff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: #efeaea;
+}
+
+#menu {
+display: none;
+}
+
+/* MAIN BODY */
+
+div.bg {
+    min-height: 170vh;
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    margin-top: 6rem;
+    bottom: 200px;
+    
+   
+ }
+
+
+
+div.title{
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    font-family: 'Raleway';
+    font-size: 2rem;
+    line-height: 1.5;
+    
+    
+ }
+
+div.service{
+    color: #ffffff;
+    font-family: 'Nunito Sans';
+    position: absolute;
+    top: 700px;
+    left: 50px;
+}
+ 
+
+  
+/* .phone {
+    width: 27.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* Queries */
+
+/* Desktop */
+@media (max-width: 1920px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+/* Tab */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+        background-size: auto;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #FFAF10;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        color: #ffff;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform:ScaleX(0.4);
+    }
+
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+   
+    #menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #FFAF10;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        color: #ffff;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform:ScaleX(0.4);
+    }
+}
+
